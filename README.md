@@ -1,6 +1,6 @@
 # Embedding-Based Retrieval System for SMS Dataset
 
-This project implements a document retrieval system using embeddings, applied to an SMS spam classification dataset. It builds on previous TF-IDF-based search by generating semantic embeddings with a pre-trained model, fine-tuning them, and performing similarity-based document retrieval. 
+This project implements a document retrieval system using embeddings, applied to an SMS spam classification dataset. It builds on by generating semantic embeddings with a pre-trained model, fine-tuning them, and performing similarity-based document retrieval. 
 
 The goal is to improve search relevance by using embeddings that capture deeper semantic patterns in the data.
 
@@ -28,16 +28,3 @@ We tested the system with three types of queries:
 1. A query expected to yield 10 results (e.g., "You have won a free ticket to our prize draw!").
 2. A query expected to yield fewer than 10 results (e.g., "Congratulations, you've been selected for a prize").
 3. A non-obvious query to test broader retrieval (e.g., "Coffee is good for sleep").
-
-The system successfully retrieved relevant messages for each test case. It showed strong performance in grouping spam-related messages for spammy queries and retrieved `ham` messages for non-obvious queries.
-
-## Conclusion
-
-This embedding-based retrieval system enhances search relevance by using semantic similarity. Fine-tuning the embeddings improved the retrieval quality, as seen in the clustering and testing results. The use of an autoencoder for dimensionality reduction further optimized the embeddings for this specific dataset.
-
-For a detailed theoretical background, see [this reference](https://doi.org/10.1007/s10772-024-10133-5) on embeddings and semantic similarity.
-
----
-
-**References**  
-Sharma, K. V., Ayiluri, P. R., Betala, R., et al. (2024). Enhancing query relevance: leveraging SBERT and cosine similarity for optimal information retrieval. _International Journal of Speech Technology_, 27, 753–763.
